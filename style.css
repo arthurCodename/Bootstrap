@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
+.footer {
+    height: 250px;
+}
+
+.logo {
+    background-color: #47525e;
+    padding: 7px 45px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.cart-btn {
+    background-color: #47525e;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+
+#sidebar-ctnr {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#info {
+    background-color: #c7d2df;
+    width: 300px;
+
+    border-radius: 10px;
+}
+
+
+#position-txt {
+    vertical-align: top;
+}
+
+#photo-ctnr {
+    width: 300px;
+    height: 200px;
+    background-color: #c7d2df;
+}
+
+#bottoms {
+    background-color: black;
+}
