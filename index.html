@@ -2,23 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
-      <div
-        class="navbar navbar-expand-sm px-5"
-        style="background-color: #c7d2df; height: 60px"
+      <nav
+        class="navbar navbar-expand-sm navbar-light px-5"
+        style="background-color: #c7d2df"
       >
-        <div class="container-fluid gx-5" style="height: 100%">
-          <a class="navbar-brand fs-6" href=""><div class="logo">Logo</div></a>
+        <div class="container-fluid gx-5 h-100">
+          <a class="navbar-brand fs-6" href="#">
+            <div
+              class="logo rounded-2 p-2"
+              style="
+                background-color: #47525e;
+                color: #fff;
+                font-weight: 500;
+                text-align: center;
+                min-width: 6vw;
+              "
+            >
+              Logo
+            </div>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,41 +46,73 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mb-2 me-auto mb-l-0">
-              <li class="nav-item" style="background-color: #e5e9f2">
-                <a class="nav-link active" href="">Start</a>
+            <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+              <li class="nav-item h-100" style="background-color: #e5e9f2">
+                <a class="nav-link active d-block h-100" href="#">Start</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">About</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Features</a>
+                <a class="nav-link" href="#">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link" href="#">Pricing</a>
               </li>
             </ul>
-            <button class="cart-btn">Cart(1)</button>
+            <button
+              class="cart-btn btn rounded-2"
+              style="
+                background-color: #47525e;
+                color: #fff;
+                font-weight: 500;
+                padding: 7px 20px;
+                border: none;
+              "
+            >
+              Cart(1)
+            </button>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
-    <main class="main">
+    <main class="main" style="display: flex; justify-content: center">
       <div class="container-fluid my-4">
-        <div class="row justify-content-around">
-          <div class="col-md-3" id="sidebar-ctnr">
-            <div id="info"></div>
+        <div class="row justify-content-center justify-content-md-around">
+          <div
+            class="col-md-3 mb-4 mb-md-0"
+            id="sidebar-ctnr"
+            style="height: 550px; display: flex; justify-content: center"
+          >
+            <div
+              id="info"
+              style="
+                background-color: #c7d2df;
+                width: 300px;
+                border-radius: 10px;
+              "
+            ></div>
           </div>
           <div class="col-md-8">
-            <div class="row"><span class="fs-1 fw-bold">Title1</span></div>
             <div class="row">
-              <div class="col">
+              <span class="fs-1 fw-bold" style="color: #58626d">Title1</span>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-lg-4">
                 <div>
-                  <div class="my-4" id="photo-ctnr"></div>
+                  <div
+                    class="my-4"
+                    id="photo-ctnr"
+                    style="
+                      width: 100%;
+                      height: 200px;
+                      background-color: #c7d2df;
+                    "
+                  ></div>
                   <h1 class="my-4 fs-2 fw-bold" style="color: #58626d">
                     Lorem ipsum dolor
                   </h1>
-                  <div style="width: 300px">
+                  <div style="width: 100%" class="text-secondary">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Maiores officia rem distinctio voluptatum, voluptates animi
                     quo cupiditate unde. Quidem nemo fuga et iusto dolorem
@@ -73,13 +120,21 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-md-4 col-lg-4">
                 <div>
-                  <div class="my-4" id="photo-ctnr"></div>
+                  <div
+                    class="my-4"
+                    id="photo-ctnr"
+                    style="
+                      width: 100%;
+                      height: 200px;
+                      background-color: #c7d2df;
+                    "
+                  ></div>
                   <h1 class="my-4 fs-2 fw-bold" style="color: #58626d">
                     Lorem ipsum dolor
                   </h1>
-                  <div style="width: 300px">
+                  <div style="width: 100%" class="text-secondary">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Maiores officia rem distinctio voluptatum, voluptates animi
                     quo cupiditate unde. Quidem nemo fuga et iusto dolorem
@@ -87,13 +142,21 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-md-4 col-lg-4">
                 <div>
-                  <div class="my-4" id="photo-ctnr"></div>
+                  <div
+                    class="my-4"
+                    id="photo-ctnr"
+                    style="
+                      width: 100%;
+                      height: 200px;
+                      background-color: #c7d2df;
+                    "
+                  ></div>
                   <h1 class="my-4 fs-2 fw-bold" style="color: #58626d">
                     Lorem ipsum dolor
                   </h1>
-                  <div style="width: 300px">
+                  <div style="width: 100%" class="text-secondary">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Maiores officia rem distinctio voluptatum, voluptates animi
                     quo cupiditate unde. Quidem nemo fuga et iusto dolorem
@@ -106,23 +169,158 @@
         </div>
       </div>
     </main>
-    <footer class="footer mt-auto" style="background-color: #47525e">
+    <footer style="background-color: #47525e; color: #fff; padding: 30px">
       <div class="container-fluid">
-        <div class="row justify-content-around" style="height: 250px">
-          <div class="col-4 align-self-center" id="bottoms">
-            <div class="row">
-              <div class="col">
-                <a class="navbar-brand fs-6" href=""
-                  ><div class="logo">Logo</div></a
-                >
-              </div>
-              <div class="col">hello</div>
-            </div>
+        <div class="row">
+          <div class="col-md-2 d-flex justify-content-end mb-3 mb-md-0">
+            <div
+              class="rounded"
+              style="width: 100px; height: 20px; background-color: #c7d2df"
+            ></div>
           </div>
-          <div class="col-4 align-self-center" id="bottoms">hey</div>
+          <div class="col-md-2 mb-3 mb-md-0">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Features</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Search</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >T &amp; Cs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Privacy</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Community</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <form>
+              <h6 class="text-white mb-2">Get our newsletter</h6>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-primary ms-2"
+                  style="background-color: white"
+                >
+                  <span class="text-dark p-3">Subscribe</span>
+                </button>
+              </div>
+              <div
+                class="mt-2 d-flex justify-content-center justify-content-md-start"
+              >
+                <div class="mx-1">1</div>
+                <div class="mx-1">2</div>
+                <div class="mx-1">3</div>
+                <div class="mx-1">4</div>
+                <div class="mx-1">5</div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main {
+        flex: 1;
+      }
+
+      .footer {
+        height: 250px;
+      }
+
+      .logo {
+        background-color: #47525e;
+        padding: 7px 45px;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 500;
+      }
+
+      .cart-btn {
+        background-color: #47525e;
+        padding: 7px 20px;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 500;
+      }
+
+      #sidebar-ctnr {
+        height: 550px;
+        display: flex;
+        justify-content: center;
+      }
+
+      #info {
+        background-color: #c7d2df;
+        width: 300px;
+
+        border-radius: 10px;
+      }
+
+      #position-txt {
+        vertical-align: top;
+      }
+
+      #photo-ctnr {
+        width: 300px;
+        height: 200px;
+        background-color: #c7d2df;
+      }
+
+      #bottoms {
+        background-color: black;
+      }
+    </style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
